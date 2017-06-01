@@ -17,7 +17,7 @@ __npm install clever-combobox --save__
         [submitIconClass]="'fa fa-search fa-lg'"
         [loadingIconClass]="'fa fa-spinner fa-spin'"></clever-combobox>
     </div>
-    ```
+    ``` 
 
 ## Compatibility (tested with)
 * Chrome (latest)
