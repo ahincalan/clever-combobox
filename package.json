@@ -1,6 +1,6 @@
 {
   "name": "clever-combobox",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Highly configurable Angular combo box. Simple to use and extra features. Compatible with __Angular4__ versions.",
   "main": "bundles/clever-combobox.umd.js",
   "typings": "index.d.ts",
@@ -14,7 +14,11 @@
     "ngc": "ngc -p tsconfig.publish.json",
     "bundle": "rollup -c rollup.config.js && uglifyjs npmdist/bundles/clever-combobox.umd.js --compress --mangle --screw-ie8 -o npmdist/bundles/clever-combobox.umd.min.js"
   },
-  "repository": {},
+  "author": "ahincalan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahincalan/clever-combobox.git"
+  },
   "keywords": [
     "Angular",
     "Combo box",
