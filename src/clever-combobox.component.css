@@ -1,0 +1,56 @@
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon {
+  left: 0px;
+}
+
+.right-addon .glyphicon {
+  right: 0px;
+}
+
+/* add padding  */
+.left-addon input {
+  padding-left: 30px;
+}
+
+.right-addon input {
+  padding-right: 30px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+i.icon-default {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+i.icon-default-event {
+  pointer-events: all;
+}
+
+i.icon-one {
+  right: 0;
+}
+
+i.icon-two {
+  right: 32px;
+}
+
+i.icon-three {
+  right: 64px;
+}

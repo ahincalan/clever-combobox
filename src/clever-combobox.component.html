@@ -1,0 +1,28 @@
+<div [ngClass]="containerClass">
+  <i *ngIf="(!!clearIconClass) && (displayText!=='')"
+     [ngClass]="_clearIconClass"
+     (click)="clearIconClick()"
+     [ngStyle]="clearIconStyleObject">
+  </i>
+  <i *ngIf="!!submitIconClass"
+     [ngClass]="_submitIconClass"
+     (click)="searchIconClick()"
+     [ngStyle]="submitIconStyleObject">
+  </i>
+  <input type="text"
+         [ngStyle]="inputStyleObject"
+         [(ngModel)]="displayText"
+         list="cleaverList"
+         (click)="onInputClick()"
+         (keypress)="keyPressEvent($event)"
+         class="form-control"
+         (focus)="onFocus()"
+         (focusout)="onFocusOut()"
+         placeholder="Search"/>
+  <div id="cleaverList" style="display: none; z-index: 1000;" (mousemove)="onMouseMove()" (mouseleave)="onMouseLeave()">
+    <a class="list-group-item list-group-item-action" *ngFor="let item of itemList | Myfilter: displayText" style="cursor: pointer;"
+       (click)="clickDropDownItem($event,item)">{{item.displayValue}}</a>
+  </div>
+</div>
+
+
