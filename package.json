@@ -1,6 +1,6 @@
 {
   "name": "clever-combobox",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Highly configurable Angular combo box. Simple to use and extra features. Compatible with __Angular4__ versions.",
   "main": "bundles/clever-combobox.umd.js",
   "typings": "index.d.ts",
