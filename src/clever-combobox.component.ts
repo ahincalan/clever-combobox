@@ -17,9 +17,9 @@ export class CleverComboboxComponent implements OnInit {
 
   private iconDefaultPadding = 32;
   itemList: CleaverItemList[] = [
-    {keyValue: '1', displayValue: 'deneme1'},
-    {keyValue: '2', displayValue: 'deneme2'},
-    {keyValue: '3', displayValue: 'deneme3'}
+    {keyValue: '1', displayValue: 'Sample 1'},
+    {keyValue: '2', displayValue: 'Sample 2'},
+    {keyValue: '3', displayValue: 'Sample 3'}
   ];
 
   private _clearIconClass: string;
@@ -81,7 +81,7 @@ export class CleverComboboxComponent implements OnInit {
     console.log('SelectEvent', ev);
   }
 
-  clickDropDownItem(c: any, item: any) {
+  clickDropDownItem(c: any, item: CleaverItemList) {
     this.keyValue = item.keyValue;
     this.displayText = item.displayValue;
     this.dropDownListMouseOver = false;
